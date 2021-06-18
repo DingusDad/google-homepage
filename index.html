@@ -2,116 +2,7 @@
 <main>
     <head>
         <title>Google Clone Homepage</title>
-        <style>
-
-        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-        main {
-            font-family: 'Roboto', sans-serif;
-        }
-
-        .material-icons {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;  /* Preferred icon size */
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
-
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
-
-  /* Support for IE. */
-  font-feature-settings: 'liga';
-}
-
-            nav {
-                display: block;
-                position: fixed;
-                margin-top: 0px;
-                width: 100%;
-            }
-
-            ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-            }
-
-            .navleft {
-                float: left;
-                margin: 10px;
-            }
-
-            .navright {
-                float: right;
-                margin: 10px;
-            }
-
-            li {
-                display: inline;
-                padding: 10px;
-            }
-
-            .logo {
-                margin: auto;
-                grid-column-start: 3;
-                grid-column-end: 4;
-                grid-row-start: 2;
-                grid-row-end: 3;
-            }
-
-            .container {
-                display: grid;
-                height: 90vh;
-                grid-template-rows: repeat(5, 1fr);
-                grid-template-columns: repeat(5, 1fr);
-            }
-
-            .search {
-                margin: auto;
-                width: 55%;
-                grid-column-start: 2;
-                grid-column-end: 5;
-                grid-row-start: 3;
-                grid-row-end: 4; 
-            }
-
-            input[type=text] {
-                width: 100%;
-                border-radius: 25px;
-                height: 2.5rem;
-                background-image: url();
-            }
-
-            footer {
-                width: 100%;
-                position: fixed;
-                display: block;
-                margin-bottom: 0px;
-            }
-
-            .footerleft {
-                float: left;
-                margin: 10px;
-            }
-
-            .footerright {
-                float: right;
-                margin: 10px;
-            }
-
-        </style>
+        <link rel="stylesheet" href="styles/style.css">
     </head>
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -129,7 +20,7 @@
         <ul>
             <li><a href="#gmail">Gmail</a></li>
             <li><a href="#images">Images</a></li>
-            <li><a href="#Menu"><span class="material-icons">apps</span>
+            <li><a href="#menu"><span class="material-icons">apps</span>
             </a></li>
             <li><a href="#profile"><span class="material-icons">account_circle</span>
             </a></li>
@@ -148,6 +39,10 @@
             <form action="search">
                 <input id="search" name="search" type="text">
             </form>
+            <div class="center-button">
+                <button class="button">Google Search</button>
+                <button class="button">I'm Feeling Lucky</button>
+            </div>
         </div>
     </div>
 

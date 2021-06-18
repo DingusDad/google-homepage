@@ -1,0 +1,155 @@
+<style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+        main {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .material-icons {
+            font-family: 'Material Icons';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;  /* Preferred icon size */
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+
+        /* Support for all WebKit browsers. */
+        -webkit-font-smoothing: antialiased;
+        /* Support for Safari and Chrome. */
+        text-rendering: optimizeLegibility;
+
+        /* Support for Firefox. */
+        -moz-osx-font-smoothing: grayscale;
+
+        /* Support for IE. */
+        font-feature-settings: 'liga';
+}
+
+            nav {
+                display: block;
+                position: fixed;
+                margin-top: 0px;
+                padding: 0px;
+                top: 10px;
+                width: 100%;
+            }
+
+            body {
+                font-size: 0.9rem;
+            }
+
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            .navleft {
+                float: left;
+                margin: 10px;
+            }
+
+            .navright {
+                float: right;
+                margin: 10px;
+            }
+
+            li {
+                text-decoration: none;
+                display: inline;
+                padding: 10px;
+            }
+
+            a {
+                text-decoration: none;
+                color: inherit;
+                margin: 0px;
+                padding: 0px;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+
+            .logo {
+                margin: auto;
+                grid-column-start: 3;
+                grid-column-end: 4;
+                grid-row-start: 2;
+                grid-row-end: 3;
+            }
+
+            .container {
+                display: grid;
+                height: 90vh;
+                grid-template-rows: repeat(5, 1fr);
+                grid-template-columns: repeat(5, 1fr);
+            }
+
+            .search {
+                margin: auto;
+                width: 55%;
+                grid-column-start: 2;
+                grid-column-end: 5;
+                grid-row-start: 3;
+                grid-row-end: 4; 
+            }
+
+            input[type=text] {
+                border: 1px solid rgb(155, 155, 155);
+                width: 100%;
+                border-radius: 25px;
+                height: 2.5rem;
+                background-image: url(images/search1.png);
+                background-repeat: no-repeat;
+                background-position: 20px;
+            }
+
+            input[type=text]:focus {
+               outline: none;
+            }
+
+            .button {
+                border-radius: 10px;
+                margin: 1.5rem;
+                background-color: rgb(253, 247, 230);
+                border: none;
+                height: 2.5rem;
+                margin-top: 1rem;
+            }
+
+            button:hover {
+                background-color: rgb(233, 232, 230);
+            }
+
+            .center-button {
+                display: flex;
+                justify-content: center;
+            }
+
+            footer {
+                bottom: 0;
+                width: 100%;
+                background-color: rgb(253, 247, 230);
+                position: fixed;
+                display: block;
+                margin-bottom: 0px;
+            }
+
+            .footerleft {
+                float: left;
+                margin: 10px;
+            }
+
+            .footerright {
+                float: right;
+                margin: 10px;
+            }
+
+        </style>
